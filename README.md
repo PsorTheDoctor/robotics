@@ -1,2 +1,2 @@
 # robotics
-Ingredients of private robotic reseearch.
+Ingredients of private robotic research.
