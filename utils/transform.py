@@ -58,7 +58,7 @@ def rotation_matrix(euler_angles=None, axis=None, theta=0):
 
 def translation_vector([x, y, z]):
   t = np.array([x, y, z])
-  return t
+  return t.reshape(3, 1)
 
 
 def transformation_matrix([x, y, z, a, b, g]):
