@@ -35,5 +35,4 @@ def load_bunny(density=1000):
   bunny = mesh.sample(density)
   scaler = MinMaxScaler(feature_range=(0, 1))
   bunny = scaler.fit_transform(bunny)
-
   return np.array(bunny)
