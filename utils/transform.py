@@ -56,7 +56,7 @@ def rotation_matrix(euler_angles=None, axis=None, theta=0):
   return R
 
 
-def translation_vector(x, y, z):
+def translation_vector([x, y, z]):
   t = np.array([x, y, z])
   return t
 
@@ -76,7 +76,7 @@ def randomize_rotation(degree_range=180):
   b = radians(random.random() * degree_range)
   g = radians(random.random() * degree_range)
 
-  return rotation_matrix(a, b, g)
+  return rotation_matrix(euler_angles=[a, b, g])
 
 
 def randomize_translation(range=1):
@@ -85,7 +85,7 @@ def randomize_translation(range=1):
   y = random.random() * range
   z = random.random() * range
 
-  return translation_vector(x, y, z)
+  return translation_vector([x, y, z])
 
 
 def randomize_transformation(range=1, degree_range=180):
