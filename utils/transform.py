@@ -61,7 +61,7 @@ def translation_vector([x, y, z]):
   return t
 
 
-def transformation_matrix(x, y, z, a, b, g):
+def transformation_matrix([x, y, z, a, b, g]):
 
   R = rotation_matrix(a, b, g)
   t = translation_vector(x, y, z)
